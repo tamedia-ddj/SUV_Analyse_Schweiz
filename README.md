@@ -1,12 +1,10 @@
-# SUV
+# SUV Analyse Schweiz
 
 
 
 ![SUV](SUV_lux_CH.svg)
 
 ## Analyse der SUVs in der Schweiz
-
-asdf.
 
 **Datenquelle(n)**: Bundesamt für Strassen (ASTRA) ([astra.admin.ch](https://www.astra.admin.ch/astra/de/home.html))
 
@@ -18,11 +16,13 @@ asdf.
 
 ## Beschreibung
 
-Erstmals soll die Verteilung der SUVs und Geländewagen in der Schweiz auf Gemeindeebene dargestellt und untersucht werden. In der Schweiz gibt es keine offizielle Definition was als "SUV" oder als "Geländewagen" gilt. Deshalb greifen wir auf eine Liste der deutschen Behörden zurück, welche eine solche Kategorisierung vornimmt. Im weiteren Text wird der Begriff "SUV" verwendet und soll sich auf beide Typen beziehen. 
+Erstmals soll die Verteilung der SUVs und Geländewagen in der Schweiz auf Gemeindeebene dargestellt und untersucht werden. In der Schweiz gibt es keine offizielle Definition was als "SUV" oder als "Geländewagen" gilt. Deshalb greifen wir auf eine Liste der deutschen Behörden zurück, welche eine solche Kategorisierung vornimmt. Im weiteren Text verwendete Begriff "SUV" bezieht sich sowohl auf SUVs als auch auf Geländewagen gemäss dieser Liste.
 
 ## Datengrundlage
 
 ### Fahrzeuge
+
+File: [Mockup_Data.csv](Data_input/Mockup_Data.csv)
 
 Das Astra unterhält eine Datenbank mit allen registrierten Fahrzeugen in der Schweiz. Ein Auszug aus dieser Datenbank dient als Grundlage für diese Analyse. Der Auszug erfolgte im Februar 2019.
 
@@ -49,42 +49,62 @@ Der verwendete Datensatz ist nicht öffentlich zugänglich und kann deshalb nich
 
 ### SUV Typen
 
+File: [Typenliste SUV - export.csv](Data_input/Typenliste SUV - export.csv)
+
 In der Schweiz werden SUVs und Geländewagen nicht gesondert erfasst. Es gibt also keinen Eintrag in der Datenbank welcher den Rückschluss erlauben würde, ob es sich bei einem Fahrzeug um ein SUV oder Geländewagen handelt. Um Personenwagen als SUVs oder Geländewagen zu identifizieren haben wir auf eine Liste der deutschen Behörden zurückgegriffen, welche eine solche Einteilung vornimmt. Auf diese Liste sind die 117 häufigsten SUVs und Geländewagen aufgeführt. Zusätzlich habe wir die Liste mit Luxus-Geländewagen von Maserati, Lamborghini, Cadillac und Rolls Royce ergänzt.
 
-Für diese Fahrzeuge haben wir eine zusätzlich Kategorisierung in Luxuriöse SUVs durchgeführt
+Auf dieser Liste haben wir zusätzlich Fahrzeuge als "luxuriös" kategorisiert, die gemeinhin mit Luxus assoziiert werden.
+
+Folgende Variablen sind in der Typen Liste:
+
+| Variable        | Beschreibung                                                 |
+| --------------- | ------------------------------------------------------------ |
+| `Marke`         | Marke des Fahrzeuges.                                        |
+| `Typ`           | Typ des Fahrzeuges.                                          |
+| `entfernen`     | Soll dieser Typ berücksichtigt werden in der Analyse? (Es werden nur Typen entfernt, die bereits mit einem anderen Eintrag erfasst werden). |
+| `such_typ`      | Möglichst kurze aber eindeutige Bezeichnung des Typs für die maschinelle Suche nach dem Typen innerhalb der Marke. |
+| `original_typ ` | Ursprüngliche Bezeichnung des Typs, wird nicht für Maschinelle Suche verwendet. |
+| `Lux `          | Kategorisierung, ob es sich um ein luxuriöses SUV handelt oder nicht. |
+
+### Bevölkerungsdaten
+
+File: [Bevoelkerung_2018_export.csv](Data_input/Bevoelkerung_2018_export.csv)
+
+Einwohner für jede Gemeinde, Stand 2018 vom BfS.
 
 ## Analyse
-
-Das Astra unterhält eine Datenbank mit allen registrierten Fahrzeugen in der Schweiz. Ein Auszug aus dieser Datenbank dient als Grundlage für diese Analyse. Diese Daten sind nicht öffentlich zugänglich und können deshalb nicht in diesem Github Repo zur Verfügung gestellt werden. Sat
-
-| Variable                       | Beschreibunng                                                |
-| ------------------------------ | ------------------------------------------------------------ |
-| `...`                          | ...                                                          |
-| `kanton_nummer `               | Eindeutige Kennziffer für die Kantone                        |
-| `liste_bezeichnung `           | Bezeichnung der jeweiligen Liste (Listentitel)               |
-| `...`                          | ...                                                          |
-| `liste_unterlistenverbindung ` | Eine pro Kanton eindeutige Kennzeichung einer Unterlistenverbindung. Bestehend aus Buchstabe der Listenverbindung und aufsteigender Nummer für Unterlistenverbindung. (z.B.: `C2`) |
-| `liste_verbindung `            | Eine pro Kanton eindeutige Kennzeichung einer Listenverbindung. Bestenhend aus aufsteigenden Buchstaben. (z.B.: `C`) |
-| `...`                          | ...                                                          |
-| `partei_id `                   | Eindeutige Kennziffer für die (Mutter-)Partei der jeweiligen Liste |
-| `stimmen_liste `               | Absolute Anzahl Stimmen, die die Liste im Kanton erhalten hat. |
 
 
 
 ## Output-Files
 
-### file1.csv
+Alle Resulate sind im Ordner [Data_output](Data_output/karte_gemeinden_28112019.csv) gespeichert.
 
-| Variable                      | Beschreibunng                                                |
-| ----------------------------- | ------------------------------------------------------------ |
-| `partei_bezeichnung_kurz_de ` | Parteibezeichnung Kurzform                                   |
-| `sitze_diff `                 | Differenz zur realen Sitzverteilung im Nationalrat - negative Werte bedeuten, dass in einer Wahl ohne Listenverbindung die jeweilige Partei mehr Sitze erhalten hätte |
+Die Resultate der Analyse (Anzahl SUVs pro Gemeinde) sind im folgenden file gespeichert: [karte_gemeinden_28112019.csv](Data_output/karte_gemeinden_28112019.csv)
+
+Folgende Parameter werden ausgegeben
+
+| Variable          | Beschreibung                                                 |
+| ----------------- | ------------------------------------------------------------ |
+| `Ort`             | Gemeinde                                                     |
+| `Bevölkerung`     | Anzahl Einwohner der Gemeinde                                |
+| `Anzahl_auto`     | Anzahl registrierter Personenwagen in der Gemeinde           |
+| `Anzahl_SUV `     | Anzahl der SUVs in der Gemeinde                              |
+| `Anzahl_luxSUV`   | Anzahl luxuriöse SUVs in der Gemeinde                        |
+| `SUV_per_pop `    | Anzahl SUVs pro Einwohner                                    |
+| `SUV_per_auto`    | Anteil der SUVs von allen registrierten Personenwagen        |
+| `luxSUV_per_pop`  | Anzahl luxuriöse SUVs pro Einwohner                          |
+| `luxSUV_per_auto` | Anteil der luxuriösen SUVs von allen registrierten Personenwagen |
+
+Weitere aggregierte Resulte sind in den File in den Files  [Top_Marken_28112019.csv](https://github.com/tamedia-ddj/SUVs/blob/master/Data_output/Top_Marken_28112019.csv) und [Top_Typen_28112019.csv](https://github.com/tamedia-ddj/SUVs/blob/master/Data_output/Top_Typen_28112019.csv) gespeichert.
+
+Bei den files mit dem Begiff "Mockup" im Namen handelt es sich um Resultate mit dem anonymisierten Datensatz aus dem Rechnungsbeispiel im Jupyter Notebook.
 
 
 
 ## Lizenz
 
-*Listenverbindungen Public* is free and open source software released under the permissive MIT License.
+*SUV Analyse Schweiz* is free and open source software released under the permissive MIT License.
 
 ```
 
