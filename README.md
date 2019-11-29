@@ -1,11 +1,6 @@
 # SUV Analyse Schweiz
 
 
-
-
-
-## Analyse der SUVs in der Schweiz
-
 **Datenquelle(n)**: Bundesamt für Strassen (ASTRA) ([astra.admin.ch](https://www.astra.admin.ch/astra/de/home.html))
 
 **Artikel**: [Wird publiziert am 1. Dezember 2019](https://www.tagesanzeiger.ch/)
