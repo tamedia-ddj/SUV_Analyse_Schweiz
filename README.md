@@ -10,8 +10,7 @@
 
 **Artikel**: [Wird publiziert am 1. Dezember 2019](https://www.tagesanzeiger.ch/)
 
-**Code**: [Juypter Notebook](https://github.com/tamedia-ddj/SUVs/blob/master/SUV Analyse Schweiz.ipynb)
-
+**Code**: [Juypter Notebook](SUV_Analyse_Schweiz.ipynb)
 
 
 ## Beschreibung
