@@ -43,7 +43,8 @@ Der verwendete Datensatz ist nicht öffentlich zugänglich und kann deshalb nich
 
 ### SUV Typen
 
-File: [Typenliste](Data_input/Typenliste SUV - export.csv)
+File: [Typenliste](Data_output/karte_gemeinden_28112019.csv)
+
 
 In der Schweiz werden SUVs nicht gesondert erfasst. Es gibt also keinen Eintrag in der Datenbank welcher den Rückschluss erlauben würde, ob es sich bei einem Fahrzeug um ein SUV handelt. Um Personenwagen als SUVs zu klassifizieren haben wir auf eine Liste der deutschen Behörden zurückgegriffen, welche eine solche Einteilung vornimmt. Auf dieser Liste sind die 117 (in Deutschland) häufigsten SUVs und Geländewagen aufgeführt. Zusätzlich habe wir die Liste mit Luxus-Geländewagen von Maserati, Lamborghini, Cadillac und Rolls Royce ergänzt.
 
