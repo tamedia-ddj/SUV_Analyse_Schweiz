@@ -1,8 +1,8 @@
-# Listenverbindungen
+# SUV
 
 
 
-![SUV](https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/VW_Tiguan_2.0_TSI_BlueMotion_Technology_4MOTION_Sound_%28II%29_%E2%80%93_Frontansicht%2C_24._Dezember_2017%2C_D%C3%BCsseldorf.jpg/1920px-VW_Tiguan_2.0_TSI_BlueMotion_Technology_4MOTION_Sound_%28II%29_%E2%80%93_Frontansicht%2C_24._Dezember_2017%2C_D%C3%BCsseldorf.jpg)
+![SUV](SUV_lux_CH.svg)
 
 ## Analyse der SUVs in der Schweiz
 
@@ -17,6 +17,8 @@ asdf.
 
 
 ## Beschreibung
+
+Erstmals soll die Verteilung der SUVs und Geländewagen in der Schweiz auf Gemeindeebene dargestellt und untersucht werden. In der Schweiz gibt es keine offizielle Definition was als "SUV" oder als "Geländewagen" gilt. Deshalb greifen wir auf eine Liste der deutschen Behörden zurück, welche eine solche Kategorisierung vornimmt. Im weiteren Text wird der Begriff "SUV" verwendet und soll sich auf beide Typen beziehen. 
 
 ## Datengrundlage
 
@@ -49,7 +51,7 @@ Der verwendete Datensatz ist nicht öffentlich zugänglich und kann deshalb nich
 
 In der Schweiz werden SUVs und Geländewagen nicht gesondert erfasst. Es gibt also keinen Eintrag in der Datenbank welcher den Rückschluss erlauben würde, ob es sich bei einem Fahrzeug um ein SUV oder Geländewagen handelt. Um Personenwagen als SUVs oder Geländewagen zu identifizieren haben wir auf eine Liste der deutschen Behörden zurückgegriffen, welche eine solche Einteilung vornimmt. Auf diese Liste sind die 117 häufigsten SUVs und Geländewagen aufgeführt. Zusätzlich habe wir die Liste mit Luxus-Geländewagen von Maserati, Lamborghini, Cadillac und Rolls Royce ergänzt.
 
-Diese Fahrzeuge haben wir dann noch zusätzlich in 
+Für diese Fahrzeuge haben wir eine zusätzlich Kategorisierung in Luxuriöse SUVs durchgeführt
 
 ## Analyse
 
