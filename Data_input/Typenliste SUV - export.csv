@@ -1,0 +1,129 @@
+Marke,Typ,entfernen,such_typ,original_typ,Lux
+Hummer,-,Nein,alle,Alle Modelle,lux
+Jeep,-,Ja,alle,Alle Modelle,lux
+Land Rover,-,Ja,alle,Alle Modelle,lux
+ALFA ROMEO,STELVIO,Nein,normal,STELVIO,lux
+AUDI,Q2,Nein,normal,Q2,x
+BMW,X1,Nein,normal,X1,x
+BMW,X4,Nein,normal,X4,lux
+CHEVROLET,CAPTIVA,Nein,normal,CAPTIVA,x
+CHEVROLET,TRAX,Nein,normal,TRAX,x
+CITROEN,CROSSER,Nein,normal,C-CROSSER,x
+CITROEN,CACTUS,Nein,normal,C4 CACTUS,x
+DACIA,DUSTER,Nein,normal,DUSTER,x
+DAIHATSU,TERIOS,Nein,normal,TERIOS,x
+FIAT,SEDICI,Nein,normal,SEDICI,x
+FORD,ECOSPORT,Nein,normal,ECOSPORT,x
+FORD,EDGE,Nein,normal,EDGE,x
+FORD,EXPLORER,Nein,normal,EXPLORER,x
+FORD,KUGA,Nein,normal,KUGA,x
+HONDA,CR-V,Nein,normal,CR-V,x
+HONDA,HR-V,Nein,normal,HR-V,x
+HYUNDAI,35,Nein,normal,IX 35,x
+HYUNDAI,55,Nein,normal,IX 55,x
+HYUNDAI,KONA,Nein,normal,KONA,x
+HYUNDAI,TUCSON,Nein,normal,TUCSON,x
+INFINITI,70,Nein,normal,QX70,lux
+INFINITI,FX,Nein,normal,FX,lux
+KIA,NIRO,Nein,normal,NIRO,x
+KIA,SPORTAGE,Nein,normal,SPORTAGE,x
+KIA,STONIC,Nein,normal,STONIC,x
+LADA,NIVA,Nein,normal,NIVA,x
+LEXUS,NX,Nein,normal,NX,x
+LEXUS,RX,Nein,normal,RX,lux
+MAZDA,CX-3,Nein,normal,CX-3,x
+MAZDA,CX-5,Nein,normal,CX-5,x
+MAZDA,CX-7,Nein,normal,CX-7,x
+MAZDA,TRIBUTE,Nein,normal,TRIBUTE,x
+MERCEDES,GLA,Nein,exakt,GLA,lux
+MERCEDES,GLK,Nein,exakt,GLK,lux
+MERCEDES,GLC,Nein,exakt,GLC,lux
+MERCEDES,R,Nein,exakt,R-KLASSE,lux
+MITSUBISHI,ASX,Nein,normal,ASX,x
+MITSUBISHI,OUTLANDER,Nein,normal,OUTLANDER,x
+MITSUBISHI,PAJERO,Ja,normal,PAJERO SPORT,x
+NISSAN,MURANO,Nein,normal,MURANO,x
+NISSAN,QASHQAI,Nein,normal,QASHQAI,x
+OPEL,ANTARA,Nein,normal,ANTARA,x
+OPEL,CROSSLAND,Nein,normal,CROSSLAND X,x
+OPEL,GRANDLAND,Nein,normal,GRANDLAND X,x
+OPEL,MOKKA,Nein,normal,MOKKA,x
+PEUGEOT,2008,Nein,normal,2008,x
+PEUGEOT,4007,Nein,normal,4007,x
+PEUGEOT,4008,Nein,normal,4008,x
+RENAULT,CAPTUR,Nein,normal,CAPTUR,x
+RENAULT,KADJAR,Nein,normal,KADJAR,x
+RENAULT,KOLEOS,Nein,normal,KOLEOS,x
+SEAT,ATECA,Nein,normal,ATECA,x
+SKODA,KAROQ,Nein,normal,KAROQ,x
+SKODA,YETI,Nein,normal,YETI,x
+SSANGYONG,KORANDO,Nein,normal,KORANDO,x
+SSANGYONG,TIVOLI,Nein,normal,TIVOLI,x
+SUBARU,XV,Nein,normal,XV,x
+SUZUKI,SAMURAI,Nein,normal,SAMURAI,x
+SUZUKI,SX4,Nein,normal,SX4,x
+SUZUKI,VITARA,Nein,normal,VITARA / GRAND VITARA,x
+TESLA,X,Nein,normal,MODEL X,lux
+TOYOTA,C-HR,Nein,normal,C-HR,x
+TOYOTA,RAV 4,Nein,normal,RAV,x
+VOLVO,XC70,Nein,normal,XC70,x
+VW,T-ROC,Nein,normal,T-ROC,x
+AUDI,Q3,Nein,normal,Q3,x
+AUDI,Q5,Nein,normal,Q5,lux
+AUDI,Q7,Nein,normal,Q7,lux
+BMW,X3,Nein,normal,X3,lux
+BMW,X5,Nein,normal,X5,lux
+BMW,X6,Nein,normal,X6,lux
+CADILLAC,ESCALADE,Nein,normal,ESCALADE,lux
+DAIHATSU,FEROZA,Nein,normal,FEROZA,x
+DODGE,NITRO,Nein,normal,NITRO,x
+FORD,MAVERICK,Nein,normal,MAVERICK,x
+HUMMER,H2,Ja,normal,H2,lux
+HYUNDAI,SANTA,Nein,normal,SANTA FE,x
+HYUNDAI,TERRACAN,Nein,normal,TERRACAN,x
+JAGUAR,F-PACE,Nein,normal,F-PACE,lux
+JEEP,CHEROKEE,Nein,normal,CHEROKEE und GRAND CHEROKEE,lux
+JEEP,COMMANDER,Nein,normal,COMMANDER,lux
+JEEP,COMPASS,Nein,normal,COMPASS,x
+JEEP,GRAND CHEROKEE,Ja,normal,GRAND CHEROKEE,lux
+JEEP,PATRIOT,Nein,normal,PATRIOT,x
+JEEP,RENEGADE,Nein,normal,RENEGADE,x
+JEEP,WRANGLER,Nein,normal,WRANGLER,lux
+JEEP,HOTCHKISS,Nein,normal,HOTCHKISS,x
+KIA,SORENTO,Nein,normal,SORENTO,x
+LAND ROVER,DEFENDER,Nein,normal,DEFENDER,lux
+LAND ROVER,DISCOVERY,Nein,normal,DISCOVERY (ink. SPORT),lux
+LAND ROVER,DISCOVERY SPORT,Ja,normal,DISCOVERY SPORT,lux
+LAND ROVER,FREELANDER,Nein,normal,FREELANDER,lux
+LAND ROVER,RANGE ROVER,Nein,normal,RANGE ROVER (inkl. EVOQUE und SPORT),lux
+LAND ROVER,RANGE ROVER EVOQUE,Ja,normal,RANGE ROVER EVOQUE,lux
+LAND ROVER,RANGE ROVER SPORT,Ja,normal,RANGE ROVER SPORT,lux
+MERCEDES,G,Nein,exakt,G-KLASSE,lux
+MERCEDES,GL,Nein,exakt,GL,lux
+MERCEDES,GLS,Nein,exakt,GLS,lux
+MERCEDES,GLE,Nein,exakt,GLE,lux
+HYUNDAI,GALLOPER,Nein,normal,HDPIC GALLOPER,x
+MITSUBISHI,L200,Nein,normal,L200,x
+MITSUBISHI,PAJERO,Nein,normal,PAJERO,x
+MITSUBISHI,PAJERO,Ja,normal,PAJERO PININ,x
+NISSAN,PATHFINDER,Nein,normal,PATHFINDER,x
+NISSAN,PATROL,Nein,normal,PATROL,x
+NISSAN,TERRANO,Nein,normal,TERRANO II,x
+NISSAN,TRAIL,Nein,normal,X-TRAIL,x
+OPEL,FRONTERA,Nein,normal,FRONTERA,x
+PORSCHE,CAYENNE,Nein,normal,CAYENNE,lux
+PORSCHE,MACAN,Nein,normal,MACAN,lux
+SKODA,KODIAQ,Nein,normal,KODIAQ,x
+SSANGYONG,REXTON,Nein,normal,REXTON,x
+SUBARU,FORESTER,Nein,normal,FORESTER,x
+SUZUKI,GRAND VITARA,Ja,normal,GRAND VITARA,x
+SUZUKI,JIMNY,Nein,normal,JIMNY,x
+TOYOTA,LANDCRUISER,Nein,normal,LANDCRUISER,x
+VOLVO,XC60,Nein,normal,XC60,x
+VOLVO,XC90,Nein,normal,XC90,lux
+VW,TIGUAN,Nein,normal,TIGUAN,x
+VW,TOUAREG,Nein,normal,TOUAREG,lux
+Cadillac,SRX,Nein,normal,SRX,lux
+Lamborghini,Urus,Nein,normal,Urus,lux
+Maserati,Levante,Nein,normal,Levante,lux
+Royce,Cullinan,Nein,normal,Cullinan,lux
