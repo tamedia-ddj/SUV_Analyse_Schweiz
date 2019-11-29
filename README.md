@@ -2,7 +2,7 @@
 
 
 
-![SUV](SUV_lux_CH.svg)
+
 
 ## Analyse der SUVs in der Schweiz
 
@@ -17,6 +17,8 @@
 ## Beschreibung
 
 Erstmals soll die Verteilung der SUVs und Geländewagen in der Schweiz auf Gemeindeebene dargestellt und untersucht werden. In der Schweiz gibt es keine offizielle Definition was als "SUV" oder als "Geländewagen" gilt. Deshalb greifen wir auf eine Liste der deutschen Behörden zurück, welche eine solche Kategorisierung vornimmt. Im weiteren Text verwendete Begriff "SUV" bezieht sich sowohl auf SUVs als auch auf Geländewagen gemäss dieser Liste.
+
+Aufgrund der in dieser Liste aufgeführten SUV-Typen können dann alle Fahrzeuge in der ASTRA Datenbank als SUV oder nicht-SUV klassifiziert werden. Zusätzlich wird noch eine Klassifizierung luxuriöser SUVs vorgenommen.
 
 ## Datengrundlage
 
@@ -60,9 +62,9 @@ Folgende Variablen sind in der Typen Liste:
 | Variable        | Beschreibung                                                 |
 | --------------- | ------------------------------------------------------------ |
 | `Marke`         | Marke des Fahrzeuges.                                        |
-| `Typ`           | Typ des Fahrzeuges.                                          |
+| `Typ`           | Möglichst kurze aber eindeutige Bezeichnung des Typs für die maschinelle Suche nach dem Typen innerhalb der Marke. |
 | `entfernen`     | Soll dieser Typ berücksichtigt werden in der Analyse? (Es werden nur Typen entfernt, die bereits mit einem anderen Eintrag erfasst werden). |
-| `such_typ`      | Möglichst kurze aber eindeutige Bezeichnung des Typs für die maschinelle Suche nach dem Typen innerhalb der Marke. |
+| `such_typ`      | - "alle": Alle Fahrzeuge dieser Marke werden als SUV klassifiziert. (Wird nur bei Hummer gemacht)<br />- "normal": Normaler Suchmodus<br />- "exakt": Es werden nur Fahrzeuge welche die exakte entsprechung des Typs in der Typenbezeichnung haben (wird nur für die Mercedes "R" und "G" Modelle verwendet, da diese sonst zu viele Treffer liefern) |
 | `original_typ ` | Ursprüngliche Bezeichnung des Typs, wird nicht für Maschinelle Suche verwendet. |
 | `Lux `          | Kategorisierung, ob es sich um ein luxuriöses SUV handelt oder nicht. |
 
@@ -74,15 +76,28 @@ Einwohner für jede Gemeinde, Stand 2018 vom BfS.
 
 ## Analyse
 
+Alle Fahrzeugtypen der SUV-Liste werden im ASTRA Datensatz gesucht. Dabei werden zuerst alle Einträge einer bestimmten Marke gesucht. Danach werden innerhalb dieser Marke die verschiedenen Typen mit Hilfe der Bezeichnung `such_typ` gesucht. 
 
+Es ist nicht ausgeschlossen, dass es zu falsch klassifizierten Fahrzeugen kommen kann. Gründe dafür können sein:
 
-## Output-Files
+- Falsch geschrieben Marken oder Typenbezeichnungen
+- Alte Typenbezeichnungen die inzwischen geändert haben
 
-Alle Resulate sind im Ordner [Data_output](Data_output/karte_gemeinden_28112019.csv) gespeichert.
+Zudem ist die SUV-Typenliste nicht abschliessend. Es sind nur nur die häufigsten 
+
+## Resultate
+
+Insgesamt konnten 830'000 der ca. 4.6 Millionen registrierten Personenwagen als SUVs klassifiziert werden.
+
+![SUV](SUV_res_CH.svg)
+
+![SUV](SUV_Lux_res_CH.svg)
+
+Alle Resultate sind im Ordner [Data_output](Data_output/karte_gemeinden_28112019.csv) gespeichert.
 
 Die Resultate der Analyse (Anzahl SUVs pro Gemeinde) sind im folgenden file gespeichert: [karte_gemeinden_28112019.csv](Data_output/karte_gemeinden_28112019.csv)
 
-Folgende Parameter werden ausgegeben
+Folgende Parameter werden ausgegeben:
 
 | Variable          | Beschreibung                                                 |
 | ----------------- | ------------------------------------------------------------ |
