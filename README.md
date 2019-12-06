@@ -1,6 +1,5 @@
 # SUV Analyse Schweiz
 
-
 **Datenquelle(n)**: Bundesamt für Strassen (ASTRA) ([astra.admin.ch](https://www.astra.admin.ch/astra/de/home.html))
 
 **Artikel**: [Wird publiziert am 1. Dezember 2019](https://www.tagesanzeiger.ch/)
@@ -37,9 +36,7 @@ Der verwendete Datensatz ist nicht öffentlich zugänglich und kann deshalb nich
 - Spalte `Spalte Inverkehrsetzung_Kanton` wurde mit einem Platzhalter versehen
 - Spalte `PLZ` wurde mit einem Platzhalter versehen
 - Spalte `Ort` wurde mit einem Platzhalter versehen
-- Spalte `BFS-Gemeinde-Nr` ist mit einer zufällige (valide) BFS Nummer versehen.
-
-
+- Spalte `BFS-Gemeinde-Nr` ist mit einer zufälligen (validen) BFS Nummer versehen.
 
 ### SUV Typen
 
@@ -107,8 +104,6 @@ Folgende Parameter werden ausgegeben:
 Weitere aggregierte Resultate sind in den File in den Files  [Top_Marken_28112019.csv](https://github.com/tamedia-ddj/SUVs/blob/master/Data_output/Top_Marken_28112019.csv) und [Top_Typen_28112019.csv](https://github.com/tamedia-ddj/SUVs/blob/master/Data_output/Top_Typen_28112019.csv) gespeichert.
 
 Bei den Files mit dem Begriff "Mockup" im Namen handelt es sich um Resultate mit dem anonymisierten Datensatz aus dem Rechnungsbeispiel im Jupyter Notebook.
-
-
 
 ## Lizenz
 
